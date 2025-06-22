@@ -1,38 +1,39 @@
 # HeadHunter Resume Analysis Project
 
 ## Project Overview
-This project focuses on preprocessing and analyzing resume data from HeadHunter (hh.ru) to build a salary prediction model. Many job seekers don't specify their desired salary when creating resumes, so we need to transform and clean the data to enable automated salary estimation.
+This project focuses on preprocessing and analyzing resume data from HeadHunter (hh.ru) to prepare for salary prediction modeling. The dataset contains information about job seekers who didn't specify their desired salary.
 
 ## Project Structure
 The project consists of 4 main stages:
 
-### 1. Basic Data Structure Analysis
-- Initial data exploration
+### 1. Basic Data Analysis
+- Initial data exploration with pandas
 - Data types and missing values analysis
+- Statistical overview of features
 
 ### 2. Data Transformation
-- Categorical feature processing (One-Hot Encoding)
-- Feature extraction (work experience, education, city, etc.)
-- Salary conversion to RUB using currency rates
+- Salary amount and currency extraction
+- Currency conversion to RUB
+- One-Hot Encoding for categorical features
+- Age and work experience extraction
 
 ### 3. Exploratory Data Analysis
-- Key feature distribution visualization
-- Feature relationship analysis
-- Anomaly and outlier detection
+- Interactive visualizations with Plotly
+- Distribution analysis (histograms, boxplots)
+- Correlation analysis
 
 ### 4. Data Cleaning
-- Missing value handling
-- Duplicate removal
-- Outlier filtering
+- Handling missing values
+- Outlier detection and treatment
+- Data consistency checks
 
 ## Technical Stack
-- Python 3
-- Pandas
-- NumPy
-- Plotly (for visualization)
-- Scikit-learn (for preprocessing)
+- **Python 3**
+- **Pandas** - Data manipulation and analysis
+- **NumPy** - Numerical operations
+- **Matplotlib/Seaborn** - Basic visualizations
+- **Plotly** - Interactive visualizations
 
 ## Requirements
-Install dependencies with:
 ```bash
-pip install pandas numpy plotly scikit-learn
+pip install pandas numpy matplotlib seaborn plotly
